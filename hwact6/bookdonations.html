@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Book Donation Form</title>
+</head>
+
+<body>
+    <h1>Book Donation Form</h1>
+    <form>
+        <!-- PART 1: Donor Details -->
+        <fieldset>
+            <legend>Donor Details</legend>
+
+            <label for="donor-name">Your Name:</label>
+            <input type="text" id="donor-name" name="donor_name" required>
+            <br><br>
+
+            <label for="donor-id">Donor ID:</label>
+            <input type="password" id="donor-id" name="donor_id" required>
+            <br><br>
+
+            <label for="donation-date">Donation Date:</label>
+            <input type="date" id="donation-date" name="donation_date" required>
+        </fieldset>
+        <br>
+
+        <!-- PART 2: Book Details -->
+        <fieldset>
+            <legend>Book Details</legend>
+
+            <label for="book-category">Book Category:</label>
+            <select id="book-category" name="book_category">
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="education">Education</option>
+            </select>
+            <br><br>
+
+            <span>Book Condition:</span><br>
+            <input type="radio" id="condition-like-new" name="book_condition" value="like_new">
+            <label for="condition-like-new">Like New</label><br>
+
+            <input type="radio" id="condition-good" name="book_condition" value="good">
+            <label for="condition-good">Good</label><br>
+
+            <input type="radio" id="condition-used" name="book_condition" value="used">
+            <label for="condition-used">Used</label>
+            <br><br>
+
+            <!-- PART 3: Title or notes -->
+            <label for="book-notes">Book Title or Notes:</label><br>
+            <textarea id="book-notes" name="book_notes" rows="4" cols="40"></textarea>
+        </fieldset>
+        <br>
+
+        <!-- PART 4: Drop-off days and button -->
+        <fieldset>
+            <legend>Drop-Off Day</legend>
+
+            <input type="checkbox" id="day-monday" name="dropoff_day" value="monday">
+            <label for="day-monday">Monday</label><br>
+
+            <input type="checkbox" id="day-wednesday" name="dropoff_day" value="wednesday">
+            <label for="day-wednesday">Wednesday</label><br>
+
+            <input type="checkbox" id="day-friday" name="dropoff_day" value="friday">
+            <label for="day-friday">Friday</label>
+        </fieldset>
+        <br>
+
+        <button type="submit">Donate My Book</button>
+    </form>
+</body>
+
+</html>
